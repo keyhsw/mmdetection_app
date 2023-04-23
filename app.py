@@ -11,7 +11,7 @@ if os.getenv('SYSTEM') == 'spaces':
     import mim
 
     mim.uninstall('mmcv-full', confirm_yes=True)
-    mim.install('mmcv-full==1.5.2', is_yes=True)
+    mim.install('mmcv-full==2.0.0', is_yes=True)
 
     subprocess.call('pip uninstall -y opencv-python'.split())
     subprocess.call('pip uninstall -y opencv-python-headless'.split())
